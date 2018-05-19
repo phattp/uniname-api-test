@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>API App</title>
+        <link rel="stylesheet" type="text/css" href="/index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="inline">
+                <h2>SUN</h2>
+                <% if (grouped["SUN"] && grouped["SUN"].length) { %>
+                    <% grouped["SUN"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>MON</h2>
+                <% if (grouped["MON"] && grouped["MON"].length) { %>
+                    <% grouped["MON"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>TUE</h2>
+                <% if (grouped["TUE"] && grouped["TUE"].length) { %>
+                    <% grouped["TUE"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>WED</h2>
+                <% if (grouped["WED"] && grouped["WED"].length) { %>
+                    <% grouped["WED"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>THU</h2>
+                <% if (grouped["THU"] && grouped["THU"].length) { %>
+                    <% grouped["THU"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>FRI</h2>
+                <% if (grouped["FRI"] && grouped["FRI"].length) { %>
+                    <% grouped["FRI"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+            <div class="inline">
+                <h2>SAT</h2>
+                <% if (grouped["SAT"] && grouped["SAT"].length) { %>
+                    <% grouped["SAT"].forEach(function(sun){ %>
+                        <div>
+                            <div><img src="<%= sun.photo %>"></div>
+                            <div><strong><%= sun.name %></strong></div>
+                        </div>
+                    <% }); %>
+                <% } else { %>
+                    <div class="noone"><strong>No one was born this day!!</strong></div>
+                <% }; %>
+            </div>
+        </div>
+    </body>
+</html>
